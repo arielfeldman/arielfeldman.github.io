@@ -14,18 +14,55 @@ body, html {height: 100%}
     background-position: center;
     background-size: cover;
 }
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  /* background-color: #2196F3; */
+  padding: 10px;
+}
+.grid-item {
+  /* background-color: rgba(255, 255, 255, 0.8); */
+  /* border: 1px solid rgba(0, 0, 0, 0.8); */
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
 </style>
 <body>
 
 <div class="bgimg w3-display-container w3-animate-opacity w3-text-black">
-  <div class="w3-display-topleft w3-padding-large w3-xlarge">
-    REL's semi-professional website
+  <div class="w3-display-topleft w3-padding-large w3-xlarge" style="margin:auto;width:50%">
+    A Realtime Rodent Neuroengineer Teaching Machines To Learn
   </div>
-  <div class="w3-display-left">
-    <h1 class="w3-jumbo w3-animate-top w3-padding-large w3-text-deep-purple">Research</h1>
-    <hr class="w3-border-grey" style="margin:auto;width:30%">
-    <p class="w3-large w3-center w3-text-deep-purple"><a href ="Research/index.html">Interests and Projects</a></p><br>
-  </div>
+  <div class="grid-container w3-display-bottommiddle">
+      <div class="grid-item">
+        <!-- <div class="w3-display-left"> -->
+          <h1 class="w3-jumbo w3-animate-top w3-padding-large w3-text-deep-purple">Research</h1>
+          <hr class="w3-border-grey" style="margin:auto;width:30%">
+          <p class="w3-large w3-center w3-text-deep-purple"><a href ="Research/index.html">Interests and Projects</a></p>
+          <p class="w3-large w3-center w3-text-deep-purple"><a href ="Research/RELevator/index.html">RELevator</a></p>
+          <p class="w3-large w3-center w3-text-deep-purple"><a href ="Research/index.html">Rodent Tracking</a></p>
+          <p class="w3-large w3-center w3-text-deep-purple"><a href ="Research/index.html">Shark Wave</a></p>
+          <p class="w3-large w3-center w3-text-deep-purple"><a href ="Research/CornellNeuroNex/index.html">Cornell NeuroNex</a></p>
+          <p class="w3-large w3-center w3-text-deep-purple"><a href ="Research/index.html">Publications</a></p>
+        </div>
+      <!-- </div> -->
+      <div class="grid-item">
+          <h1 class="w3-jumbo w3-animate-top w3-padding-large w3-text-blue">REL</h1>
+          <hr class="w3-border-grey" style="margin:auto;width:30%">
+          <p class="w3-large w3-center w3-text-blue"><a href ="Research/index.html">About Me</a></p>
+          <p class="w3-large w3-center w3-text-blue"><a href ="Research/index.html">CV</a></p>
+          <p class="w3-large w3-center w3-text-blue"><a href ="Research/index.html">Get in Touch!</a></p>
+      </div>
+      <div class="grid-item">
+          <h1 class="w3-jumbo w3-animate-top w3-padding-large w3-text-light-blue">Teaching</h1>
+          <hr class="w3-border-grey" style="margin:auto;width:30%">
+          <p class="w3-large w3-center w3-text-light-blue"><a href ="Research/index.html">General Philosophy</a></p>
+          <p class="w3-large w3-center w3-text-light-blue"><a href ="Research/index.html">NEUR 383</a></p>
+          <p class="w3-large w3-center w3-text-light-blue"><a href ="Research/index.html">NEUR 385</a></p>
+          <p class="w3-large w3-center w3-text-light-blue"><a href ="Research/index.html">COMP 140</a></p>
+      </div>
+    </div>
   <!-- <div class="w3-display-right">
     <h1 class="w3-jumbo w3-animate-top w3-padding-large w3-text-indigo">moo</h1>
     <hr class="w3-border-grey" style="margin:auto;width:30%">
