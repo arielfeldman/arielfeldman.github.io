@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Rodent Tracking</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome
+/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+.w3-bar,h1,button {font-family: "Montserrat", sans-serif}
+.fa-file-code {
+        font-size:300px;
+        }
+.bgimg {
+    background-image: url('images/implant1.jpg');
+    min-height: 100%;
+    background-position: 0% 30%;
+    background-size: cover;
+    position: initial;
+}
+.implant {
+        background-image: url('images/earlyimplant.png');
+        min-height: 100%;
+        background-position: center;
+        background-size:cover;
+}
+h7 {
+        text-shadow: 2px 2px 2px rgb(0, 0, 0);
+        }
+</style>
+<body>
+
+<!-- Header -->
+<header class="w3-container bgimg w3-center" style="padding:64px 16px">
+  <h7><h1 class="w3-margin w3-jumbo w3-text-white">Rodent Tracking</h1></h7>
+</header>
+
+<!-- First Grid -->
+<div class="w3-row-padding w3-padding-16 w3-display-container">
+    <br>
+  <div class="w3-content">
+    <div class="w3-twothird">
+      <h1>Heuristic</h1>
+      <p class="w3-text-grey">
+                In my first semester at the RNEL, I developed videotracking
+                software via background model subtraction, morphological
+                operations, and further algorithmic manipulations for use in
+                future behavioral studies. After isolating the foreground, my
+                algorithm would identify the largest object (I affectionately
+                refer to this as RatBlob), and sequentially bifurcate first the
+                entire RatBlob, then the two RatBlob halves left over. With
+                sufficient training on the background, my algorithm performed
+                fairly well. However, the performance was not robust to my
+                liking — an unsteady background, multiple animals and visual
+                noise (i.e. camera shaking or readjusting) could throw off the
+                tracker. Additionally, occlusion by wires or an implant may
+                disrupt tracking, which rendered my solution useful for only
+                wireless experiments — thereby making my algorithm rather
+                useless to many of my labmates. Thus, I was not satisfied with
+                the result.
+      </p>
+    </div>
+
+    <div class="w3-third w3-center w3-display-right" style="padding:128px 16px">
+      <h7>
+              <!-- <h1 class="w3-margin implant w3-jumbo w3-text-white w3-right">
+              Wireless Stimulation
+                </h1> -->
+        </h7>
+
+    </div>
+  </div>
+</div>
+
+<!-- Second Grid -->
+<div class="w3-row-padding w3-light-grey w3-padding-16 w3-display-container">
+        <div class="w3-content">
+                <!-- <div class="w3-third w3-center" style="padding:64px 32px">
+                        <i class="far fa-file-code w3-padding-16 w3-text-cyan
+                                w3-margin-left"></i>
+                      </div> -->
+
+          <div class="w3-twothird">
+            <h1>Spring 2018</h1>
+            <!-- <h5 class="w3-padding-16">
+                Preprint <a href="https://www.biorxiv.org/content/10.1101/461855v1?rss=1">here!</a>
+        </h5> -->
+
+                <p class="w3-text-grey">
+                        Fast forward to a year later, after having spent summer
+                        of 2017 and the following fall semester developing the
+                        RELevator, I felt it was time to return to my initial
+                        project. This time, however, I wanted to gain more
+                        experience with machine learning methods, particularly
+                        with neural networks. With this in mind, I began
+                        exploring neural network applications for object
+                        tracking and image processing. To access the GitHub
+                        repository, click <a 
+                        href="https://github.com/arielfeldman/RNELDeepLabCut">
+                        here!</a>
+                </p>
+          </div>
+        </div>
+      </div>
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity">  
+  <div class="w3-xlarge w3-padding-32">
+    <a href=
+        "https://www.facebook.com/Rice-Neuroengineering-Initiative
+        -100413027999310/" class="fa fa-facebook-official w3-hover-opacity"></a>
+    <a href="https://www.instagram.com/long_evans_lifting/"
+        class="fa fa-instagram w3-hover-opacity"></a>
+    <a href="https://www.linkedin.com/in/arielfeldman/"
+        class="fa fa-linkedin w3-hover-opacity"></a>
+ </div>
+</footer>
+
+</body>
+</html>
