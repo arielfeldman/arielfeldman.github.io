@@ -12,95 +12,122 @@
 <style>
 body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
 .w3-bar,h1,button {font-family: "Montserrat", sans-serif}
-.fa-project-diagram, .fa-search-location {
-        font-size:200px;
-        }
+.fa-search-location {
+  font-size:200px;
+}
+.fa-project-diagram {
+  font-size:150px;
+}
 .bgimg {
-    background-image: url('images/budgies.PNG');
-    min-height: 100%;
-    background-position: 0% 10%;
-    background-size:cover;
-    position: initial;
+  background-image: url('images/budgies.PNG');
+  min-height: 100%;
+  background-position: 0% 10%;
+  background-size:cover;
+  position: initial;
 }
 h7 {
-        text-shadow: 2px 2px 2px rgb(255, 255, 255);
-        }
+  text-shadow: 2px 2px 2px rgb(255, 255, 255);
+}
 </style>
 <body>
 
 <!-- Header -->
 <header class="w3-container bgimg w3-center" style="padding:64px 16px">
-  <h7><h1 class="w3-margin w3-jumbo w3-text-pale-yellow">Animal Tracking</h1></h7>
+  <h7>
+    <h1 class="w3-margin w3-jumbo w3-text-pale-yellow">
+      Animal Tracking
+    </h1>
+  </h7>
 </header>
 
 <!-- First Grid -->
 <div class="w3-row-padding w3-padding-16 w3-display-container">
-    <br>
+  <br>
   <div class="w3-content">
     <div class="w3-twothird">
       <h1>Heuristic</h1>
       <p class="w3-text-grey">
-                In my first semester at the RNEL, I developed videotracking
-                software via background model subtraction, morphological
-                operations, and further algorithmic manipulations for use in
-                future behavioral studies. After isolating the foreground, my
-                algorithm would identify the largest object (I affectionately
-                refer to this as RatBlob), and sequentially bifurcate first the
-                entire RatBlob, then the two RatBlob halves left over. With
-                sufficient training on the background, my algorithm performed
-                fairly well. However, the performance was not robust to my
-                liking — an unsteady background, multiple animals and visual
-                noise (i.e. camera shaking or readjusting) could throw off the
-                tracker. Additionally, occlusion by wires or an implant may
-                disrupt tracking, which rendered my solution useful for only
-                wireless experiments — thereby making my algorithm rather
-                useless to many of my labmates. Thus, I was not satisfied with
-                the result.
+        In my first semester at the RNEL, I developed videotracking
+        software via background model subtraction, morphological
+        operations, and further algorithmic manipulations for use in
+        future behavioral studies. After isolating the foreground, my
+        algorithm would identify the largest object (I affectionately
+        refer to this as RatBlob), and sequentially bifurcate first the
+        entire RatBlob, then the two RatBlob halves left over. With
+        sufficient training on the background, my algorithm performed
+        fairly well. However, the performance was not robust to my
+        liking — an unsteady background, multiple animals and visual
+        noise (i.e. camera shaking or readjusting) could throw off the
+        tracker. Additionally, occlusion by wires or an implant may
+        disrupt tracking, which rendered my solution useful for only
+        wireless experiments — thereby making my algorithm rather
+        useless to many of my labmates. Thus, I was not satisfied with
+        the result.
       </p>
     </div>
 
     <div class="w3-third w3-center w3-display-right" style="padding:64px 32px">
       <h7>
-              <div class="w3-third w3-center" style="padding:64px 32px">
-                        <i class="fas fa-search-location w3-padding-16 w3-text-cyan
-                                w3-margin-left"></i>
-                      </div>
-        </h7>
-
+        <div class="w3-third w3-center" style="padding:64px 32px">
+          <i class="fas fa-search-location w3-padding-16 w3-text-cyan
+            w3-margin-left">
+          </i>
+        </div>
+      </h7>
     </div>
   </div>
 </div>
 
 <!-- Second Grid -->
 <div class="w3-row-padding w3-light-grey w3-padding-16 w3-display-container">
-        <div class="w3-content">
-                <div class="w3-third w3-center" style="padding:64px 32px">
-                        <i class="fas fa-project-diagram w3-padding-16 w3-text-cyan
-                                w3-margin-left"></i>
-                      </div>
+  <div class="w3-content">
+    <div class="w3-third w3-center" style="padding:64px 32px">
+      <i class="fas fa-project-diagram w3-padding-16 w3-text-cyan
+        w3-margin-left">
+      </i>
+    </div>
 
-          <div class="w3-twothird">
-            <h1>Spring 2018</h1>
-            <!-- <h5 class="w3-padding-16">
-                Preprint <a href="https://www.biorxiv.org/content/10.1101/461855v1?rss=1">here!</a>
-        </h5> -->
+    <div class="w3-twothird">
+      <h1>
+        Spring 2018
+      </h1>
+      <p class="w3-text-grey">
+        Fast forward to a year later, after having spent summer
+        of 2017 and the following fall semester developing the
+        RELevator, I felt it was time to return to my initial
+        project. This time, however, I wanted to gain more
+        experience with machine learning methods, particularly
+        with neural networks. With this in mind, I began
+        exploring neural network applications for object
+        tracking and image processing. To access the GitHub
+        repository, click
+        <a href="https://github.com/arielfeldman/RNELDeepLabCut">
+          here!
+        </a>
+      </p>
+    </div>
+  </div>
+</div>
 
-                <p class="w3-text-grey">
-                        Fast forward to a year later, after having spent summer
-                        of 2017 and the following fall semester developing the
-                        RELevator, I felt it was time to return to my initial
-                        project. This time, however, I wanted to gain more
-                        experience with machine learning methods, particularly
-                        with neural networks. With this in mind, I began
-                        exploring neural network applications for object
-                        tracking and image processing. To access the GitHub
-                        repository, click <a 
-                        href="https://github.com/arielfeldman/RNELDeepLabCut">
-                        here!</a>
-                </p>
-          </div>
-        </div>
-      </div>
+<!-- Summation of project -->
+<div class="w3-row-padding w3-padding-16 w3-display-container">
+  <br>
+  <div class="w3-content">
+    <h1>
+      Report
+    </h1>
+    <h5>
+      A more detailed report on the development and applications of a neural
+      network implementation for rodent videotracking.
+    </h5>
+    <div class="w3-center">
+      <iframe src="https://akf1.web.rice.edu/RatTrack.pdf"
+        height="420" width="500" style="border:none;"
+        download="RatTrack.pdf">
+      </iframe>
+    </div>
+  </div>
+</div>
 
 <!-- Footer -->
 <footer class="w3-container w3-padding-64 w3-center w3-opacity">  
