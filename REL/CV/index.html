@@ -12,6 +12,29 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
 h7 {
   text-shadow: 2px 2px 3px #000000;
 }
+ul li {
+  color: #3c3c3c; 
+  /* set color of list item text */
+  display: inline-block;
+  list-style: none; 
+  margin: 0 0 16px 1em;
+  /* Give the bullet room on the left hand side */
+  padding: 0;
+  position: relative;
+}
+ul li::before {
+  color: teal;
+  content: "\2022"; 
+  display: inline-block;
+  font-size: 2em; 
+  /* use em or % */ 
+  left: -1.25em; 
+  /* use em, line up bullet flush with left hand side */
+  position: absolute;
+  /* Set the bullet positioned absolutely top left */
+  top: -0.35em; 
+  /* use em or % */
+}
 </style>
 <body class="w3-light-grey">
 
@@ -26,17 +49,33 @@ h7 {
     
       <div class="w3-white w3-text-grey w3-card-4">
         <div class="w3-display-container">
-          <img src="images/headshot.jpg" style="width:100%" alt="Avatar">
+          <img src="images/headshot.jpg" style="width:100%" alt="Ariel Feldman">
           <div class="w3-display-bottomleft w3-container w3-text-white">
             <h7><h2>Ariel Feldman</h2></h7>
           </div>
         </div>
         <div class="w3-container">
-          <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i>Neuroengineering Student</p>
+          <p>
+            <i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal">
+            </i>
+            Neuroengineering Student
+          </p>
           <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i>Houston, TX</p>
           <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i>akf1@rice.edu</p>
           <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i>847-571-4660</p>
           <hr>
+
+          <p class="w3-large"><b><i class="fas fa-award fa-fw w3-margin-right w3-text-teal"></i>Honors and Achievements</b></p>
+          <ul class="a">
+          <li>Selected for Cornell NeuroNex REU program ($4600 stipend)</li>
+          <li>Rice Undergraduate Scholars Research Grant ($2500 in total)</li>
+          <li>Internal Vice President of Rice Neuroscience Society</li>
+          <li>Author on the first place winning Graduate Project at Rice University Electrical and
+            Computer Engineering Affiliates Day</li>
+          <li>Rice University representative for Neuroengineering research at the Gulf Coast
+            Undergraduate Research Symposium</li>
+          <li>Presented a TEDx: RiceU talk on Women in Martial Arts and STEM</li>
+          </ul>
 
           <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>Software Skills</b></p>
           <p>Python</p>
@@ -91,7 +130,7 @@ h7 {
         </div>
       </div>
     
-      <div class="w3-container w3-card w3-white w3-margin-bottom">
+      <div class="w3-container w3-card w3-white">
         <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Research Experience</h2>
         <div class="w3-container">
           <h5 class="w3-opacity"><b>Research Assistant / Realtime Neural Engineering Lab</b></h5>
@@ -115,6 +154,75 @@ h7 {
           <h5 class="w3-opacity"><b>NSF-REU Fellow / Cornell NeuroNex</b></h5>
           <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jun 2019 - Aug 2019</h6>
           <p>I spent the summer of 2019 conducting research under the supervision of Dr. Mert Sabuncu and Dr. Jesse Goldberg at Cornell University regarding machine learning applications to neuroscientific problems.</p><br>
+        </div>
+      </div>
+
+      <div class="w3-container w3-card w3-white w3-margin-bottom">
+        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Teaching Experience</h2>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>Lovett College Academic Fellow</b></h5>
+          <h6 class="w3-text-teal">
+            <i class="fa fa-calendar fa-fw w3-margin-right">
+            </i>Mar 2018 - 
+              <span class="w3-tag w3-teal w3-round">
+                Current
+              </span>
+            </h6>
+            <p>
+              Selected on behalf of the Rice University Office of Academic
+              Advising on the basis of proven academic achievement and
+              demonstrated willingness to help fellow students. I offer on-call
+              aid in Computer Science, Neuroscience and paper writing
+              (historical/STEM research) through weekly office hours, one-on-one
+              tutoring, review sessions for several classes in my fields, and
+              planning academic outreach events to engage students.
+            </p>
+          <hr>
+        </div>
+        <div class="w3-container">
+          <h5 class="w3-opacity">
+            <b>
+              Teaching Assistant for Introduction to Computational Thinking
+            </b>
+          </h5>
+          <h6 class="w3-text-teal">
+            <i class="fa fa-calendar fa-fw w3-margin-right">
+            </i>Fall 2018
+            </h6>
+            <p>
+              Responsibilities include: leading review sessions, creating exam
+              review material, grading exams and projects, and holding weekly
+              office hours to assist students in mastery of material. Check out
+              some of the material I provide
+              <a href="https://akf1.web.rice.edu/supplementary-guide-computational.pdf"
+                class="w3-hover-opacity" style="color:teal">
+                here.
+              </a>
+            </p>
+          <hr>
+        </div>
+        <div class="w3-container">
+          <h5 class="w3-opacity">
+            <b>
+              Teaching Assistant for Fundamentals of Cellular and Molecular
+              Neuroscience
+            </b>
+          </h5>
+          <h6 class="w3-text-teal">
+            <i class="fa fa-calendar fa-fw w3-margin-right">
+            </i>Fall 2017
+            </h6>
+            <p>
+              Responsibilities include: leading review sessions, creating exam
+              review material, grading exams and projects, and holding weekly
+              office hours to assist students in mastery of material. Check out
+              some of the material I provide
+              <a href="https://akf1.web.rice.edu/supplementary-guide-fundamentals.pdf"
+                class="w3-hover-opacity" style="color:teal">
+                here.
+              </a>
+            </p>
+          <!-- <hr> -->
         </div>
       </div>
 
