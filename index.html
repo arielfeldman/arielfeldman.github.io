@@ -1,108 +1,308 @@
 <!DOCTYPE html>
-<html>
-<title>Ariel Feldman</title>
+<html lang="en">
+<title>Ariel K. Feldman</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <script src='https://kit.fontawesome.com/a076d05399.js'></script>
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
 <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
 <style>
-.bgimg {
-    background-image: url('/images/windowPrototyping.png');
-    min-height: 100%;
-    background-position: 0% 25%;
-    background-size: cover;
-    position: initial;
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+h6 {
+  text-shadow: 1px 1px 1px #000000;
+  font-size: large;
 }
-h7 {
-  text-shadow: 2px 2px 3px rgb(0, 0, 0);
+body {font-size:16px;}
+.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.w3-half img:hover{opacity:1}
+.maroon { color:rgb(204,0,43); }
+.bgimg {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url('/images/windowPrototyping.png');
+  min-height: 100%;
+}
+/* Container holding the image and the text */
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+/* Centered text */
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+footer {
+  display: block;
 }
 </style>
 <body>
 
-<!-- Header -->
-<header class="w3-container w3-theme w3-padding bgimg" id="myHeader">
-  <div class="w3-center">
-  <br>
-  <h7><h1 class="w3-xxxlarge w3-animate-bottom">ARIEL FELDMAN</h1></h7>
-  <h7><h4>A Realtime Rodent Neuroengineer Teaching Machines to Learn</h4></h7>
-  <br>
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-collapse w3-top w3-large w3-padding" style="background-color:rgb(204,0,43);z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+  <div class="w3-container">
+    <h3 class="w3-padding-32 w3-text-white"><b>Ariel K.<br>Feldman</b></h3>
   </div>
+  <div class="w3-bar-block">
+    <a href="#" onclick="w3_close()" class="w3-bar-item w3-text-white w3-button w3-hover-white">Home</a> 
+    <a href="#about" onclick="w3_close()" class="w3-bar-item w3-text-white w3-button w3-hover-white">About Me</a> 
+    <a href="#teaching" onclick="w3_close()" class="w3-bar-item w3-text-white w3-button w3-hover-white">Teaching</a> 
+    <a href="#resources" onclick="w3_close()" class="w3-bar-item w3-text-white w3-button w3-hover-white">Resources</a> 
+    <a href="#research" onclick="w3_close()" class="w3-bar-item w3-text-white w3-button w3-hover-white">Research</a> 
+    <a href="/REL/RelpReviews/index.html" onclick="w3_close()" class="w3-bar-item w3-text-white w3-button w3-hover-white">Relp Reviews</a> 
+    <a href="/REL/CV/index.html" onclick="w3_close()" class="w3-bar-item w3-text-white w3-button w3-hover-white">CV</a>
+    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-text-white w3-button w3-hover-white">Contact</a>
+  </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-xlarge w3-padding" style="background-color:rgb(204,0,43)">
+  <a href="javascript:void(0)" class="w3-button w3-margin-right" style="background-color:rgb(204,0,43)" onclick="w3_open()">☰</a>
+  <span>Ariel K. Feldman</span>
 </header>
 
-<div class="w3-row-padding w3-center w3-margin-top">
-<div class="w3-third">
-  <div class="w3-card w3-container" style="min-height:460px">
-  <h3>Research</h3><br>
-  <i class="fas fa-brain w3-margin-bottom w3-text-theme" style="font-size:120px"></i>
-  <p><a href="Research/">Interests and Projects</a></p>
-  <p><a href ="Research/MagReward/">Mag Reward</a></p>
-  <p><a href ="Research/SharkWave/">Sharp Wave Ripples</a></p>
-  <p><a href ="Research/CornellNeuroNex">Cornell NeuroNex</a></p>
-  <p><a href ="Research/RELevator">The RELevator</a></p>
-  <p><a href ="Research/AnimalTracking">Animal Tracking</a></p>
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+  <!-- Header -->
+  <div class="w3-container" style="margin-top:80px" id="about">
+    <h1 class="w3-jumbo"><b>Neuroengineering</b></h1>
+    <h1 class="w3-xxxlarge maroon"><b>About Me.</b></h1>
+    <hr style="width:50px;border:5px solid rgb(204,0,43)" class="w3-round">
+  </div>
+  
+  <!-- Photo grid (modal) -->
+  <div class="w3-row-padding">
+    <div class="w3-half">
+        <br>
+        <iframe style="width:100%" height="223px" src="https://www.youtube.com/embed/wJUtF9alpfo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+
+    <div class="w3-half">
+        I am an undergraduate Computer Science and Cognitive Sciences, or (CS)<sup>2</sup>, student at Rice University interested in both using computational modeling to explore the functionality of neural circuitry, as well as the fabrication of devices to modulate neural activity. For the past 4 years, I have worked under the supervision of Dr. Caleb Kemere in the Realtime Neural Engineering Lab (RNEL). To read more about my research, both past and present, head over to my research page or check out the adjacent video!
+    </div>
+  </div>
+  <div class="w3-row w3-center w3-padding-16 w3-section w3-text-white" style="background-color: rgb(204,0,43);">
+    <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">7</span><br>
+        Labs Worked With
+    </div>
+  <div class="w3-quarter w3-section">
+    <span class="w3-xlarge">4</span><br>
+    Oral Presentations
+  </div>
+  <div class="w3-quarter w3-section">
+    <span class="w3-xlarge">4</span><br>
+    Conference Posters
+  </div>
+  <div class="w3-quarter w3-section">
+    <span class="w3-xlarge">3</span><br>
+    Classes TA'd
   </div>
 </div>
 
-<div class="w3-third">
-  <div class="w3-card w3-container" style="min-height:460px">
-  <h3>Teaching</h3><br>
-  <i class="fas fa-chalkboard-teacher w3-margin-bottom w3-text-theme" style="font-size:120px"></i>
-  <p><a href="Teaching/">General Teaching Philosophy</a></p>
-  <p><a href ="Teaching/Mentorship">Mentorship</a></p>
-  <p><a href ="http://akf1.web.rice.edu/supplementary-guide-computational.pdf">COMP 140</a></p>
-  <!-- <p><a href ="Teaching/">NEUR 383</a></p> -->
-  <p><a href ="http://akf1.web.rice.edu/supplementary-guide-fundamentals.pdf">NEUR 385/585</a></p>
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xxlarge w3-display-topright">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
   </div>
-</div>
 
-<div class="w3-third">
-  <div class="w3-card w3-container" style="min-height:460px">
-  <h3>REL</h3><br>
-  <i class="fas fa-user-edit w3-margin-bottom w3-text-theme" style="font-size:120px"></i>
-  <p><a href="REL/AboutMe">About Me</a></p>
-  <p><a href ="REL/CV">CV</a></p>
-  <p><a href ="REL/Writing">Writing</a></p>
+  <!-- Services -->
+  <!-- <div class="w3-container" id="services" style="margin-top:75px">
+    <h1 class="w3-xxxlarge maroon"><b>Services.</b></h1>
+    <hr style="width:50px;border:5px solid rgb(204,0,43)" class="w3-round">
+    <p>We are a interior design service that focus on what's best for your home and what's best for you!</p>
+    <p>Some text about our services - what we do and what we offer. We are lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+    dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
+    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    </p>
+  </div> -->
+  
+  <!-- Teaching -->
+  <div class="w3-container" id="teaching" style="margin-top:40px">
+    <h1 class="w3-xxxlarge maroon"><b>Teaching.</b></h1>
+    <hr style="width:50px;border:5px solid rgb(204,0,43)" class="w3-round">
+    <p> When I got to Rice University, I realized I had nothing figured out. Classes were hard, I had no clue what
+      my career path would look like &mdash; the impact my mentors and TAs had on me were incredibly powerful in those
+      early years. I strive to help students navigating their early years of research or a new academic field, and love
+      the.
+    </p>
+    <p><b>My experience is as follows</b>:</p>
   </div>
-</div>
-</div>
 
-<div class="w3-row-padding"> 
+  <!-- My Experience -->
+  <div class="w3-row-padding">
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="/Teaching/images/treasure.jpg" alt="Academic Fellow" style="width:100%; transform: rotate(180deg);">
+        <div class="w3-container">
+          <h3 style="color: rgb(204,0,43);">Academic Fellow</h3>
+          <p style="color: rgb(77, 77, 77);">Computer Science, Neuroscience, Research & Writing</p>
+          <p>Academic Fellowships at Rice University aim to identify students who perform exceptionally in a certain course, major or field that may be able to provide free, on-call academic aid to students who reside in their residential colleges.</p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="/images/whiteboard1.jpg" alt="Teaching Assistant" style="width:100%">
+        <div class="w3-container">
+          <h3 style="color: rgb(204,0,43);">Teaching Assistant</h3>
+          <p style="color: rgb(77, 77, 77); white-space: pre;">COMP 140
+NEUR/BIOC 385
+ELEC 220</p>
+          <p>Teaching assistants are selected by professors on the basis of past class performance, understanding of material and willingness to help others via grading and weekly office hours, as well as exam review sessions. This is more specific than a Fellow.</p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="/images/rel&nikhil.JPG" alt="Mentorship" style="width:100%">
+        <div class="w3-container">
+          <h3 style="color: rgb(204,0,43);">Mentorship</h3>
+          <p style="color: rgb(77, 77, 77);white-space: pre;">Elisabeth Torres-Schulte
+Eugene Kim
+Lily Xie</p>
+          <p>As a hopeful academic, I see it as my duty to help the next generation of neuroengineers by taking undergraduates under my wing and helping them identify any opportunities that may interest them. Check them out 
+            <a style="color: rgb(204,0,43);" href="https://arielfeldman.github.io/Teaching/Mentorship/">here</a>!</p>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
 
-<div class="w3-third">
-<div class="w3-card-4">
-  <iframe style="width:100%" height="223px" src="https://www.youtube.com/embed/wJUtF9alpfo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
-</div>
+  <!-- Resources -->
+  <div class="w3-container" id="resources" style="margin-top:40px">
+    <h1 class="w3-xxxlarge maroon"><b>Resources.</b></h1>
+    <hr style="width:50px;border:5px solid rgb(204,0,43)" class="w3-round">
+    <p>Below, I have included some notes and course resources I've put together for classes I have TA'd and Fellowed for at Rice University.</p>
+  </div>
 
-<div class="w3-third">
-<div class="w3-card-4">
-  <img src="images/whiteboard.JPG" alt="Teaching" style="width:100%">
-</div>
-</div>
+  <div class="w3-row-padding">
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="container">
+        <a href="/supplementary-guide-fundamentals.pdf"><img class="w3-hover-opacity" src="/images/neurons1.png" alt="NEUR 385/585" style="width:100%; transform: rotate(180deg);">
+        <div class="centered w3-large">
+          <h6>NEUR 385/585</h6>
+        </div></a>
+      </div>
+    </div>
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="container">
+        <a href="/supplementary-guide-computational.pdf"><img class="w3-hover-opacity" src="/images/2.png" alt="COMP 140" style="width:100%; background-color: rgb(189, 186, 186);">
+        <div class="centered w3-large">
+          <h6>COMP 140</h6>
+        </div></a>
+      </div>
+    </div>
+    <!-- <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="/images/rel&nikhil.JPG" alt="Mentorship" style="width:100%">
+        <div class="w3-container">
+        </div>
+      </div>
+    </div> -->
+  </div>
 
-<div class="w3-third">
-<div class="w3-card-4">
-  <img src="images/shayMeme.png" alt="Ariel video screenshot" height="223px" style="width:100%">
-</div>
-</div>
-</div>
+  <!-- Research -->
+  <div class="w3-container" id="research" style="margin-top:40px">
+    <h1 class="w3-xxxlarge maroon"><b>Research.</b></h1>
+    <hr style="width:50px;border:5px solid rgb(204,0,43)" class="w3-round">
+    <p>During my undergraduate career, I have found enjoyment in the intersection of the fields of engineering and neuroscience, the former of which I’d had little to no exposure to until coming to Rice. However, I have become deeply interested in how an engineering background enables me to further probe and interact with the brain, ultimately allowing for more innovative methods of decoding neural activity. In the Kemere Lab, I am working to understand the role of the hippocampus in both spatial navigation (see RELevator) and learning/memory (check out Shark-Wave). In my graduate and post-graduate careers, however, I would like to move more towards working on decoding the underlying neural activity of memory and consciousness, ideally to the point of understanding where replication through computer simulations becomes feasible.</p>
+  </div>
 
-<!-- Footer -->
-<footer class="w3-container w3-padding-64 w3-center w3-opacity">  
-  <div class="w3-xlarge w3-padding-32">
+  <div class="w3-row-padding">
+    <div class="w3-half w3-margin-bottom">
+      <ul class="w3-ul w3-center w3-light-grey">
+        <li class="w3-xlarge w3-padding-32 w3-text-white" style="background-color: rgb(0, 32, 91);">Undergrad: Rice University</li>
+        <li class="w3-padding-16"><a href ="Research/MagReward/">Magnetoelectric Films</a></li>
+        <li class="w3-padding-16"><a href ="Research/SharkWave/">Sharp Wave Ripples</a></li>
+        <li class="w3-padding-16"><a href ="Research/CornellNeuroNex/">Cornell NeuroNex</a></li>
+        <li class="w3-padding-16"><a href ="Research/AnimalTracking/">Animal Tracking</a></li>
+        <li class="w3-padding-16"><a href ="Research/RELevator/">RELevator</a></li>
+      </ul>
+    </div>
+        
+    <div class="w3-half">
+      <ul class="w3-ul w3-center w3-light-grey">
+        <li class="w3-xlarge w3-padding-32 w3-text-white" style="background-color: rgb(204,0,43);">Grad: Carnegie Mellon</li>
+        <li class="w3-padding-16">TBD!</li>
+      </ul>
+    </div>
+  </div>
+  
+  <!-- Contact -->
+  <div class="w3-container" id="contact" style="margin-top:40px">
+    <h1 class="w3-xxxlarge maroon"><b>Contact.</b></h1>
+    <hr style="width:50px;border:5px solid rgb(204,0,43)" class="w3-round">
+    <p>Office hours, research help, pie appointments — you name it. Shoot me a message:</p>
+    <form action="mailto:akf1@rice.edu" method="post" enctype="text/plain" target="_blank">
+      <div class="w3-section">
+        <label>Name</label>
+        <input class="w3-input w3-border" type="text" name="Name" required>
+      </div>
+      <div class="w3-section">
+        <label>Email</label>
+        <input class="w3-input w3-border" type="text" name="Email" required>
+      </div>
+      <div class="w3-section">
+        <label>Message</label>
+        <input class="w3-input w3-border" type="text" name="Message" required>
+      </div>
+      <button type="submit" class="w3-button w3-block w3-padding-large w3-text-white w3-margin-bottom" style="background-color: rgb(204,0,43);">Send Message</button>
+    </form>  
+  </div>
+  <!-- End page content -->
+</div>
+<footer class="w3-container w3-padding-32" style="margin-top: 32px; background-color: rgb(204,0,43);">  
+  <div class="w3-xlarge w3-center w3-padding-32 w3-text-white" style="margin-left:340px;margin-right:40px">
     <a href="https://www.github.com/arielfeldman/"><i class="fab fa-github
-      w3-hover-opacity"></i></a>
+      w3-hover-opacity">  </i></a>
     <a href="https://www.facebook.com/Rice-Neuroengineering-Initiative-100413027999310/">
-      <i class="fa fa-facebook-official w3-hover-opacity"></i></a>
-    <a href="https://www.instagram.com/long_evans_lifting/"><i class="fa
+      <i class="fa fa-facebook-official w3-hover-opacity">  </i></a>
+    <a href="https://www.instagram.com/long_evans_lifting/">  <i class="fa
       fa-instagram w3-hover-opacity"></i></a>
+    <a href="https://twitter.com/ArielKFeldman"><i class="fa fa-twitter w3-hover-opacity"></i></a>
     <a href="https://www.linkedin.com/in/arielfeldman/"><i class="fa fa-linkedin
       w3-hover-opacity"></i></a>
   </div>
 </footer>
 
+<!-- W3.CSS Container -->
+<!-- <div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:58px"><p class="w3-right">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></p></div> -->
+
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+</script>
 </body>
 </html>
-
