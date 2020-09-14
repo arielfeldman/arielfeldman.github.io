@@ -1,0 +1,25 @@
+:root {
+    --base-font-size:       32px;
+  }
+
+/*---------------------------------------
+     SOCIAL ICON              
+  -----------------------------------------*/
+
+  .social-icon {
+    position: relative;
+    padding: 0;
+  }
+
+  .social-icon li {
+    display: inline-block;
+    list-style: none;
+  }
+
+  .social-icon li a {
+    text-decoration: none;
+    display: inline-block;
+    font-size: var(--base-font-size);
+    margin: 10px;
+    text-align: center;
+  }
