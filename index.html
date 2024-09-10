@@ -431,13 +431,13 @@ title="close side menu" id="myOverlay"></div>
   </div>
 
   <!-- My Experience -->
-  <style>
-  /* Grid layout for 2x2 square grid */
+ <style>
+  /* Grid layout for 2x2 rectangular grid */
   .grid-container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 2 columns with equal width */
-    grid-template-rows: repeat(2, 1fr); /* 2 rows with equal height */
-    gap: 20px; /* Add some space between the grid items */
+    grid-template-columns: repeat(2, 1fr); /* 2 equal-width columns */
+    grid-template-rows: auto; /* Adjust height based on content */
+    gap: 20px; /* Add space between grid items */
   }
 
   .grid-item {
@@ -446,19 +446,19 @@ title="close side menu" id="myOverlay"></div>
     flex-direction: column;
     justify-content: space-between;
     padding: 10px;
+    height: auto; /* Let the height of each item be determined by the content */
   }
 
   .grid-item img {
     width: 100%;
-    height: auto; /* Adjust height to maintain image aspect ratio */
-    max-height: 200px; /* Optional: Cap the image height */
+    height: auto; /* Maintain image aspect ratio */
+    max-height: 250px; /* Optional: Limit the image height to keep a rectangular shape */
   }
 
   /* Responsive grid for mobile devices */
   @media (max-width: 768px) {
     .grid-container {
       grid-template-columns: 1fr; /* Stack items vertically on small screens */
-      grid-template-rows: auto;
     }
   }
 </style>
