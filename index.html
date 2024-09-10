@@ -431,134 +431,103 @@ title="close side menu" id="myOverlay"></div>
   </div>
 
   <!-- My Experience -->
-  <div class="w3-row-padding">
-    <div class="w3-col m6 w3-margin-bottom">
-      <div class="w3-light-grey">
-        <img src="images/IOTBackground.png" alt="Course Development" 
-        style="width:100%;">
-        <div class="w3-container">
-          <h3 style="color: rgb(204,0,43);">
-            Course Development
-          </h3>
-          <p style="color: rgb(77, 77, 77);">
-            Rice Center for Engineering Leadership's IOT with 
-            Machine Learning & Python
-          </p>
-          <p>Teaching high school students how to utilize realtime sensor data,
-            along with the immense data available online, to create predicitive
-            unsupervised machine learning algorithms and utilizing JSON/HTTP.
-          </p>
-        </div>
-      </div>
-    </div>
-    <div class="w3-col m6 w3-margin-bottom">
-      <div class="w3-light-grey">
-        <img src="/Teaching/images/treasure.jpg" alt="Academic Fellow"
-        style="width:100%;">
-        <div class="w3-container">
-          <h3 style="color: rgb(204,0,43);">
-            Academic Fellow
-          </h3>
-          <p style="color: rgb(77, 77, 77);">
-            Computer Science, Neuroscience, Research & Writing
-          </p>
-          <p>
-            Academic Fellowships at Rice University aim to identify students
-            who perform exceptionally in a certain course, major or field that
-            may be able to provide free, on-call academic aid to students who
-            reside in their residential colleges.
-          </p>
-        </div>
-      </div>
-    </div>
-    <div class="w3-col m6 w3-margin-bottom">
-      <div class="w3-light-grey">
-        <img src="/images/whiteboard1.jpg" alt="Teaching Assistant"
-        style="width:100%">
-        <div class="w3-container">
-          <h3 style="color: rgb(204,0,43);">
-            Teaching Assistant
-          </h3>
-          <p style="color: rgb(77, 77, 77); white-space: pre;">COMP 140
-NEUR/BIOC 385
-ELEC 220</p>
-          <p>
-            Teaching assistants are selected by professors on the basis of past
-            class performance, understanding of material and willingness to help
-            others via grading and weekly office hours, as well as exam review
-            sessions. This is more specific than a Fellow.
-          </p>
-        </div>
-      </div>
-    </div>
-    <div class="w3-col m6 w3-margin-bottom">
-      <div class="w3-light-grey">
-        <img src="/images/rel&nikhil.JPG" alt="Mentorship" style="width:100%">
-        <div class="w3-container">
-          <h3 style="color: rgb(204,0,43);">
-            Mentorship
-          </h3>
-          <p style="color: rgb(77, 77, 77);white-space: pre;">Elisabeth Torres-Schulte
-Eugene Kim
-Lily Xie</p>
-            <p>
-              As a newbie in academia, I needed a lot of help getting on my feet and
-              figuring out how the system works. I try and pass that knowledge onto my
-              undergrads, check them out 
-              <a style="color: rgb(204,0,43);" 
-              href="https://arielfeldman.github.io/Teaching/Mentorship/">
-                here
-              </a>
-              to see some awesome future neuroscientists!
-            </p>
-          </p>
-        </div>
-      </div>
+  <style>
+  /* Grid layout for 2x2 square grid */
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns with equal width */
+    grid-template-rows: repeat(2, 1fr); /* 2 rows with equal height */
+    gap: 20px; /* Add some space between the grid items */
+  }
+
+  .grid-item {
+    background-color: #f1f1f1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+  }
+
+  .grid-item img {
+    width: 100%;
+    height: auto; /* Adjust height to maintain image aspect ratio */
+    max-height: 200px; /* Optional: Cap the image height */
+  }
+
+  /* Responsive grid for mobile devices */
+  @media (max-width: 768px) {
+    .grid-container {
+      grid-template-columns: 1fr; /* Stack items vertically on small screens */
+      grid-template-rows: auto;
+    }
+  }
+</style>
+
+<div class="grid-container">
+  <div class="grid-item">
+    <img src="images/IOTBackground.png" alt="Course Development">
+    <div class="w3-container">
+      <h3 style="color: rgb(204,0,43);">Course Development</h3>
+      <p style="color: rgb(77, 77, 77);">
+        Rice Center for Engineering Leadership's IOT with Machine Learning & Python
+      </p>
+      <p>Teaching high school students how to utilize realtime sensor data,
+        along with the immense data available online, to create predictive
+        unsupervised machine learning algorithms and utilizing JSON/HTTP.
+      </p>
     </div>
   </div>
 
-  <!-- Resources -->
-  <div class="w3-container" id="resources" style="margin-top:40px">
-    <h1 class="w3-xxxlarge maroon">
-      <b>
-        Resources.
-      </b>
-    </h1>
-    <hr style="width:50px;border:5px solid rgb(204,0,43)" class="w3-round">
-    <p>
-      Below, I have included some notes and course resources I've put together
-      for classes I have TA'd and Fellowed for at Rice University.
-    </p>
+  <div class="grid-item">
+    <img src="/Teaching/images/treasure.jpg" alt="Academic Fellow">
+    <div class="w3-container">
+      <h3 style="color: rgb(204,0,43);">Academic Fellow</h3>
+      <p style="color: rgb(77, 77, 77);">
+        Computer Science, Neuroscience, Research & Writing
+      </p>
+      <p>Academic Fellowships at Rice University aim to identify students
+        who perform exceptionally in a certain course, major, or field that
+        may be able to provide free, on-call academic aid to students who
+        reside in their residential colleges.
+      </p>
+    </div>
   </div>
 
-  <div class="w3-row-padding">
-    <div class="w3-col m4 w3-margin-bottom">
-      <div class="container">
-        <a href="/supplementary-guide-fundamentals.pdf">
-          <img class="w3-hover-opacity" src="/images/neurons1.png" 
-          alt="NEUR 385/585" style="width:100%; transform: rotate(180deg);">
-          <div class="centered w3-large">
-            <h6>
-              NEUR 385/585
-            </h6>
-          </div>
-        </a>
-      </div>
-    </div>
-    <div class="w3-col m4 w3-margin-bottom">
-      <div class="container">
-        <a href="/supplementary-guide-computational.pdf">
-          <img class="w3-hover-opacity" src="/images/2.png" alt="COMP 140" 
-          style="width:100%; background-color: rgb(189, 186, 186);">
-          <div class="centered w3-large">
-            <h6>
-              COMP 140
-            </h6>
-          </div>
-        </a>
-      </div>
+  <div class="grid-item">
+    <img src="/images/whiteboard1.jpg" alt="Teaching Assistant">
+    <div class="w3-container">
+      <h3 style="color: rgb(204,0,43);">Teaching Assistant</h3>
+      <p style="color: rgb(77, 77, 77); white-space: pre;">COMP 140
+        NEUR/BIOC 385
+        ELEC 220
+      </p>
+      <p>
+        Teaching assistants are selected by professors based on past
+        performance, understanding of material, and willingness to help
+        others via grading and weekly office hours, as well as exam review
+        sessions.
+      </p>
     </div>
   </div>
+
+  <div class="grid-item">
+    <img src="/images/rel&nikhil.JPG" alt="Mentorship">
+    <div class="w3-container">
+      <h3 style="color: rgb(204,0,43);">Mentorship</h3>
+      <p style="color: rgb(77, 77, 77); white-space: pre;">Elisabeth Torres-Schulte
+        Eugene Kim
+        Lily Xie
+      </p>
+      <p>
+        As a newbie in academia, I needed help getting on my feet and figuring out how
+        the system works. I pass that knowledge onto my undergrads. Check them out
+        <a style="color: rgb(204,0,43);" href="https://arielfeldman.github.io/Teaching/Mentorship/">
+          here
+        </a> to see some awesome future neuroscientists!
+      </p>
+    </div>
+  </div>
+</div>
   
   <!-- Contact -->
   <div class="w3-container" id="contact" style="margin-top:40px">
