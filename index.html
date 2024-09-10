@@ -155,14 +155,45 @@ title="close side menu" id="myOverlay"></div>
   </div>
   
   <!-- About REL -->
+<style>
+  /* Check that the video and text are properly sized and responsive. */
+  .video-container {
+    flex-shrink: 0;
+    max-height: 400px; /* Assume 400px is a reasonable max height for the video. */
+    flex-basis: 50%; /* Adjust the initial width of the video. */
+  }
+
+  .text-container {
+    flex-grow: 1;
+    padding-left: 20px;
+  }
+
+  /* Media query for mobile devices */
+  @media (max-width: 768px) {
+    .w3-row-padding {
+      flex-direction: column; /* If the website is being viewed on mobile, stack the video and text vertically. */
+    }
+
+    .video-container {
+      width: 100%; /* Video should take the full width on mobile. */
+      height: auto;
+      max-height: none; /* Allow full height scaling. */
+    }
+
+    .text-container {
+      padding-left: 0; /* Remove the padding when viewed on mobile screens. */
+    }
+  }
+</style>
+
 <div class="w3-row-padding" style="display: flex; align-items: stretch;">
-     <div style="flex-shrink: 1;">
-        <video autoplay loop muted controls="controls" style="height: 100%;" name="Brain Ball">
+    <div class="video-container">
+        <video autoplay loop muted controls="controls" style="width: 100%; height: 100%;" name="Brain Ball">
             <source src="images/tossBrainStressBall.mp4" type="video/mp4">
         </video>
     </div>
 
-    <div style="flex-grow: 1; padding-left: 20px;">
+    <div class="text-container">
         I am a PhD Candidate in Neural Computation at Carnegie Mellon University
         interested in using electrophysiology and information theory to explore
         the neural circuitry underlying how we represent our environment and 
