@@ -1,0 +1,7 @@
+title: Ariel Feldman
+description: PhD candidate in Neural Computation at CMU, working on BCIs and the Stentrode.
+baseurl: ""
+url: "https://arielfeldman.github.io"
+
+plugins:
+  - jekyll-sitemap
